@@ -19,7 +19,8 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background.jpg) 
+   no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -237,7 +238,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #c5120c;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -272,7 +273,7 @@ ul#nav li.current a { color: #F06000; }
 /*----------------------------------------------*/
 
 .bars {
-	width: 95%;
+	width: 100%;
 	float: left;
 	padding: 0;
 	text-align: left;
@@ -284,18 +285,18 @@ ul#nav li.current a { color: #F06000; }
 .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
+  	background: rgb(222, 212, 212);
+  	height: 40px;
+  	border-radius: 1px;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
    color: #313131;
 	text-transform: uppercase;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
 	font-weight: normal;
    position: relative;
-	top: -36px;
+	top: -26px;
 }
 .bar-expand {
    position: absolute;
@@ -304,90 +305,90 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+  	background: #0a0a0a;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
-   border-radius: 3px 0 0 3px;
+   border-radius: 1px 0 0 1px;
 }
 
-.MYSQL {
-  	width: 50%;
-  	-moz-animation: MYSQL 2s ease;
-  	-webkit-animation: MYSQL 2s ease;
-}
 .JAVA {
-  	width: 30%;
+  	width: 80%;
   	-moz-animation: JAVA 2s ease;
   	-webkit-animation: JAVA 2s ease;
 }
-.PYTHONE {
+.C {
   	width: 40%;
-  	-moz-animation: PYTHONE 2s ease;
-  	-webkit-animation: PYTHONE 2s ease;
+  	-moz-animation: C 2s ease;
+  	-webkit-animation: C 2s ease;
 }
-.CSS {
-  	width: 30%;
-  	-moz-animation: CSS 2s ease;
-  	-webkit-animation: CSS 2s ease;
+.PYTHON {
+  	width: 40%;
+  	-moz-animation: PYTHON 2s ease;
+  	-webkit-animation: PYTHON 2s ease;
+}
+.MYSQL {
+  	width: 75%;
+  	-moz-animation: MYSQL 2s ease;
+  	-webkit-animation: MYSQL 2s ease;
 }
 .HTML {
   	width: 60%;
   	-moz-animation: HTML 2s ease;
   	-webkit-animation: HTML 2s ease;
 }
-.AUTOCAED {
+.REACTJS {
   	width: 50%;
-  	-moz-animation: AUTOCAED 2s ease;
-  	-webkit-animation: AUTOCAED 2s ease;
+  	-moz-animation: REACTJS 2s ease;
+  	-webkit-animation: REACTJS 2s ease;
 }
 
-@-moz-keyframes MYSQL {
+@-moz-keyframes JAVA {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 80%;  }
 }
-@-moz-keyframes JAVA{
+@-moz-keyframes C{
   0%   { width: 0px;  }
-  100% { width: 30%;  }
+  100% { width: 40%;  }
 }
 @-moz-keyframes PYTHONE {
   0%   { width: 0px;  }
   100% { width: 40%;  }
 }
-@-moz-keyframes CSS {
+@-moz-keyframes MYSQL {
   0%   { width: 0px;  }
-  100% { width: 30%;  }
+  100% { width: 75%;  }
 }
 @-moz-keyframes HTML {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes AUTOCAED {
+@-moz-keyframes REACTJS {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
 
-@-webkit-keyframes MYSQL {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
 @-webkit-keyframes JAVA {
   0%   { width: 0px;  }
-  100% { width: 30%;  }
+  100% { width: 80%;  }
 }
-@-webkit-keyframes PYTHONE {
+@-webkit-keyframes C {
   0%   { width: 0px;  }
   100% { width: 40%;  }
 }
-@-webkit-keyframes CSS {
+@-webkit-keyframes PYTHON {
   0%   { width: 0px;  }
-  100% { width: 30%;  }
+  100% { width: 40%;  }
+}
+@-webkit-keyframes MYSQL {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
 }
 @-webkit-keyframes HTML {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes AUTOCAED {
+@-webkit-keyframes REACTJA {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }

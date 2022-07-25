@@ -127,7 +127,7 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: #000000;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -196,7 +196,7 @@ blockquote cite {
 }
 blockquote cite:before { content: "\2014 \0020"; }
 blockquote cite a,
-blockquote cite a:visited { color: #8B9798; border: none }
+blockquote cite a:visited { color: #3317e4; border: none }
 
 /* ---------------------------------------------------------------------
 /*  Pull Quotes Markup
@@ -268,14 +268,14 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
+   color: #260b92;
 
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
    -o-transition: color .3s ease-in-out;
    transition: color .3s ease-in-out;
 }
-a:hover, a:focus { color: #313131; }
+a:hover, a:focus { color: #ed1010; }
 p a, p a:visited { line-height: inherit; }
 
 
@@ -297,14 +297,7 @@ ul.large li { }
 li p { }
 
 /* ---------------------------------------------------------------------
-/*  Stats Tab Markup
 
-    <ul class="stats-tabs">
-		<li><a href="#">[value]<b>[name]</b></a></li>
-	 </ul>
-
-    Extend this object into your markup.
-/*
 /* --------------------------------------------------------------------- */
 .stats-tabs {
    padding: 0;
@@ -329,7 +322,7 @@ li p { }
    color: #313131;
 }
 .stats-tabs li a:hover {
-   color:#11ABB0;
+   color:#4c12de;
 }
 .stats-tabs li a b {
 	display: block;
@@ -341,7 +334,7 @@ li p { }
 
 /* definition list */
 dl { margin: 12px 0; }
-dt { margin: 0; color:#11ABB0; }
+dt { margin: 0; color:#150ae3; }
 dd { margin: 0 0 0 20px; }
 
 /* Lining Definition Style Markup */
