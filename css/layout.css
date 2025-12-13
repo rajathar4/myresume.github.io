@@ -8,10 +8,41 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #252424; }
 
 /* ------------------------------------------------------------------ */
-/* b. Header Styles
+/* b. Header Styles Blinking Text */
+.typing {
+  border-right: 3px solid #e91b1b;
+  padding-right: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 0.8s infinite;
+  color: rgb(252, 252, 252);
+}
+
+
+@keyframes blinkCursor {
+  0% { border-color: transparent; }
+  50% { border-color: #f7f7f7; }
+  100% { border-color: transparent; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    color: rgb(234, 72, 14);
+  }
+}
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------ */
 
 header {
@@ -28,9 +59,7 @@ header {
 }
 @media screen and (min-width: 768px ) and (max-width: 1023px) {
    header {
-     /* position: relative; */
-      /* height: 150px; */
-   /* min-height: 500px; */
+     
    width: 1024px; 
     background: #161415 url(../images/header-background.jpg) 
    no-repeat center center;
@@ -41,31 +70,28 @@ header {
 @media screen and (min-width: 1024px) {
    header {
     background: #161415 url(../images/header-background.jpg) 
-   no-repeat center center;
-  height: 2000px !important; 
-}
-header .banner {
-   
-position:relative !important;
-bottom: 10% !important;
-   /* padding-bottom: 80px !important; */
+   no-repeat top ;
+  height: 1400px !important; 
 
 }
-   
+header .banner {  
+position:relative !important;
+bottom: 50px !important;
+}
 }
 /* vertically center banner section */
 header:before {
    content: '';
    display: inline-block;
    vertical-align: middle;
-   height: 100%;
+   height: 1000px;
 }
 header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   width: 85%;
-   padding-bottom: 30px;
+   width: 100%;
+   padding-bottom: 10px;
    text-align: center;
 }
 
@@ -220,9 +246,11 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 100px;
-   height: 200px;
-   border-radius: 70%;
+   width: 100%;
+   height: 100%;
+   top: 5px;
+   bottom: 10px;
+   border-radius: 5%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -294,9 +322,119 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
+
+.company-icon {
+  width: 80px;
+  padding-left: 10px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .company-title {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .company-icon {
+    width: 26px;
+  }
+}
+
+
+
 /*----------------------------------------------*/
-/*	Skill Bars
+/*	Skill Bars*/
+/* ---------- Tools Section ---------- */
+.tools-section {
+  background: #f5f7fa;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #071119;
+}
+
+/* Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.tool-card {
+  background: #ffffff;
+  padding: 25px 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card i {
+  font-size: 40px;
+  color: #0592ff;
+  margin-bottom: 12px;
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Hover Effect */
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .tool-card i {
+    font-size: 34px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------*/
+
+
+
+
 
 .bars {
 	width: 100%;
