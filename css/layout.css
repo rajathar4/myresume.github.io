@@ -26,7 +26,33 @@ header {
    text-align: center;
    overflow: hidden;
 }
+@media screen and (min-width: 768px ) and (max-width: 1023px) {
+   header {
+     /* position: relative; */
+      /* height: 150px; */
+   /* min-height: 500px; */
+   width: 1024px; 
+    background: #161415 url(../images/header-background.jpg) 
+   no-repeat center center;
+   /* top: 50px; */
+}
+   
+}
+@media screen and (min-width: 1024px) {
+   header {
+    background: #161415 url(../images/header-background.jpg) 
+   no-repeat center center;
+  height: 2000px !important; 
+}
+header .banner {
+   
+position:relative !important;
+bottom: 10% !important;
+   /* padding-bottom: 80px !important; */
 
+}
+   
+}
 /* vertically center banner section */
 header:before {
    content: '';
@@ -39,7 +65,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -194,7 +220,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 200px;
+   width: 100px;
    height: 200px;
    border-radius: 70%;
 }
