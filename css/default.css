@@ -1,6 +1,10 @@
 
+/* --------------------------Light and Dark theam ---------------------------------------- */
 
-
+/* ----------------------------------------------------------------------
+ * DARK MODE THEME OVERRIDES
+ * Applies when the <body> or <html> has the class 'dark-mode'
+ * ---------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------ */
 /* a. Webfonts and Icon fonts
@@ -67,7 +71,7 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote, q { quotes:&#8220 &#8220; }
+
 
 blockquote:before, blockquote:after,
 q:before, q:after {
