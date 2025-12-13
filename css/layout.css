@@ -60,9 +60,10 @@ header {
 @media screen and (min-width: 768px ) and (max-width: 1023px) {
    header {
      
-   width: 1024px; 
+   width: 100%; 
     background: #161415 url(../images/header-background.jpg) 
-   no-repeat center center;
+   no-repeat top center;
+   height: 85vh !important;
    /* top: 50px; */
 }
    
@@ -70,13 +71,9 @@ header {
 @media screen and (min-width: 1024px) {
    header {
     background: #161415 url(../images/header-background.jpg) 
-   no-repeat top ;
-  height: 1400px !important; 
+   no-repeat top center;
+  height: 1200px !important; 
 
-}
-header .banner {  
-position:relative !important;
-bottom: 50px !important;
 }
 }
 /* vertically center banner section */
@@ -84,7 +81,7 @@ header:before {
    content: '';
    display: inline-block;
    vertical-align: middle;
-   height: 1000px;
+   height: 40%;
 }
 header .banner {
    display: inline-block;
